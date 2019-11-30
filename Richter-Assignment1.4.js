@@ -1,3 +1,13 @@
+/*
+===========================================
+; Title: Assignment 1.4
+; Author: Emily Richter
+; Date: 29 November 2019
+; Modified By: Emily Richter
+; Description: Primitive types
+;==========================================
+*/
+
 // Variable declaration
 var firstName;
 // Variable assignment
