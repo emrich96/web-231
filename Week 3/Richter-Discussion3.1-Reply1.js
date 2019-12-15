@@ -19,7 +19,7 @@ console.log(header.display('Sarah', 'Kovar', 'Exercise 3.1'));
 var animal = "sheep";
 
 //switch statement to output different animal noises
-/* ER - The expression for the the switch statement was not "sheep" but animal. The expression is not used to input a value. */
+/* ER - The expression for the the switch statement was not "sheep" but animal. The expression is not used to input a value. you had already declared the value in the variable declaration above. */
 switch(animal) {
   case "cow":
     text = "Moooooooo";
