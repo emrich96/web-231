@@ -11,7 +11,7 @@
 // Required import statement for header
 const header = require('../RichterEmily');
 // Output header
-console.log(header.display("Emily", "Richter", "Discussion 3.1"));
+console.log(header.display("Emily", "Richter", "Discussion 4.1"));
 
 // Declare array Serenity
 var serenity = ['Mal', 'Wash', 'Jayne', 'Zoe', 'Inara' 'Bester'];
@@ -27,6 +27,7 @@ function crew(serenity) {
 }
 
 // Call up crew function
+console.log('--SERENITY CREW LIST--')
 crew(serenity)
 
 //End program
