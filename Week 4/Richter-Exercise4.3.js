@@ -55,3 +55,5 @@ console.log(getValue(vehicles, 'Bus'))
 
 console.log('-- SELECTED VALUE --')
 console.log(getValue(vehicles, 'Airplane'))
+
+// End program
