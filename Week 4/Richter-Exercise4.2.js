@@ -39,3 +39,5 @@ function getFruit(fruit) {
 
 // Output
 getFruit(fruit)
+
+// End program
