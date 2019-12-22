@@ -41,7 +41,7 @@ console.log("");
 
     for(x = 0; x < 12; x++)
     /* ER - Incorrect sign for the 'test' of the for loop.
-       You are looking to test for everything before the 13 variable, so the variable should be less than 12.*/
+       You are looking to test for everything before the 13th variable, so the variable should be less than 12.*/
     {
 
         console.log(months[x]);
