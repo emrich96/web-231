@@ -15,25 +15,36 @@ const header = require('../RichterEmily');
 // Output header
 console.log(header.display("Emily", "Richter", "Assignment 4.4"));
 
+// Declare array
+var states = ['Alabama', 'Nebraska', 'Iowa', 'California', 'Nevada'];
 
-/*
-  // Below is what I am expecting to see when I run your program - remove this before submitting your work
-  // 50% of you will not read this and lose 25% of the awardable points.
-  FirstName LastName
-  Assignment 4.4
-  Today's Date
-  -- ORIGINAL ARRAY --
-  Alabama
-  Nebraska
-  Iowa
-  California
-  Nevada
-  -- SORTED ARRAY --
-  Alabama
-  California
-  Iowa
-  Nebraska
-  Nevada
-  -- SELECTED VALUE --
-  Iowa
-*/
+// Create function getState
+function getState(states, string) {
+  if (states === string) {
+    return true;}
+};
+
+// Output
+// Original array output
+console.log('-- ORIGINAL ARRAY --');
+
+for (i = 0; i < states.length; i++) {
+  console.log(states[i])
+};
+
+// Sort array
+states.sort();
+
+//Sorted array output
+console.log('-- SORTED ARRAY --');
+
+for (i = 0; i < states.length; i++) {
+  console.log(states[i])
+};
+
+// Selected value output
+console.log('-- SELECTED VALUE --');
+// Use filter method to display selected value
+console.log(states.filter(state => getState(state, 'Iowa'))[0]);
+
+// End program
