@@ -72,3 +72,5 @@ console.log('-- COMPOSER BY GENRE --');
 genreList.forEach(function(composer) {
   console.log("Genre: " + composer.genre + "\nComposer: " + composer.lastName)
 });
+
+// End program
