@@ -13,7 +13,9 @@ const header = require('../RichterEmily');
 // Output header
 console.log(header.display("Emily", "Richter", "Discussion 6.1"));
 
+// Declare object and properties
 var seriesHP = new Object ()
+
 seriesHP.author = "J.K. Rowling;
 seriesHP.publisher = "Scholastic";
 seriesHP.book1 = {
@@ -38,4 +40,7 @@ seriesHP.book7: {
   title: "Harry Potter and the Deathly Hallows",
   yearPublished: 2007};
 
+// Output
 console.log("Book 3: " + seriesHP.book3.title + "\nYear Published: " + seriesHP.book3.yearPublished);
+
+// End program
