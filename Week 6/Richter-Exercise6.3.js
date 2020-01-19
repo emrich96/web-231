@@ -2,7 +2,7 @@
 =============================================
 ; Title:  Exercise 6.3
 ; Author: Emily Richter
-; Date:   14 January 2020
+; Date:   19 January 2020
 ; Description: Demonstrates an object with
 ; get/set functions
 ;============================================
@@ -20,6 +20,13 @@ console.log(header.display("Emily", "Richter", "Exercise 6.3"));
   FirstName LastName
   Exercise 6.3
   Today's Date
-  {id: 101, name: Help Desk Support, requester: Bob Jones}
+  {id: 404, name: Help Desk Support, requester: Emily Richter}
 */
 
+var ticket = {
+  id: 404,
+  name: "Help Desk Support",
+  requester: "Emily Richter"
+};
+
+console.log(JSON.stringify(ticket));
