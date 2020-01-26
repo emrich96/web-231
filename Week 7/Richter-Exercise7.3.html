@@ -1,0 +1,51 @@
+<!-- /*
+=============================================
+; Title:  Exercise 7.3
+; Author: Emily Richter
+; Date:   25 January 2020
+; Description: Follow instructions to prove
+; understanding of embedding JavaScript in HTML.
+;============================================
+*/
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 7.3</title>
+
+  <link rel="stylesheet" href="../site.css">
+</head>
+<body>
+
+<div id="list1">
+<script>
+  document.write('<h1>Shopping List v.1</h1><ol><li>Rice</li><li>Short Ribs</li><li>Garlic</li><li>Kimchi</li><li>Soju</li></ol>');
+</script>
+</div>
+
+<div id="list2">
+<script>
+  document.getElementById('list2').innerHTML = '<h1>Shopping List v.2</h1>' +
+  '<table>' +
+  '<thead>' +
+  '<tr>' +
+  '<th>Id</th>' +
+  '<th>Item</th>' +
+  '</tr>' +
+  '</thead>' +
+  '<tbody>' +
+  '<tr><td>1</td><td>Rice</td></tr>' +
+  '<tr><td>2</td><td>Short Ribs</td></tr>' +
+  '<tr><td>3</td><td>Garlic</td></tr>' +
+  '<tr><td>4</td><td>Kimchi</td></tr>' +
+  '<tr><td>5</td><td>Soju</td></tr>' +
+  '</tbody>' +
+  '</table>'
+</script>
+</div>
+
+</body>
+</html>
