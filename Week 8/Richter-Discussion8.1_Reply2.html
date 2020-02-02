@@ -1,0 +1,64 @@
+
+<!--
+============================================
+; Title: Assignment 8.1
+; Author: Mike Goldberg
+; Date: 02/02/2020
+; Modified By: Emily Richter
+; Description: Discussion Board: Find the errors in the code below
+;===========================================
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Discussion 8.1</title>
+<style>
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.btns {
+  margin: .5rem 0;
+}
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+  <!-- ER - Space in closing div tag was keeping it from closing. -->
+  <div style="margin-bottom: 1rem">Let me know when your ready to see the something cute.. </div >
+  <div class="btns">
+   <button class="reveal">I'm ready!</button>
+   <button class="remove">Nope</button>
+  </div>
+  <div id="hiddenImg" class="hide">
+    <!-- ER - Error in link, reused last week's link. <3 Baby Yoda!!
+        Yes, I know it's "The Child". And no, I don't care. -->
+    <img style="-webkit-user-select: none;margin: auto;" src = "https://cdn.mos.cms.futurecdn.net/LGoEDSKPxnLjMpJv4VaEK5-320-80.jpg" >
+  </div>
+  <!-- ER - Another space in the closing div tag. -->
+  <div id="hiddenTxt" class="hide"> Still need more time? </div >
+
+  <script type="text/javascript">
+    $(function () {
+        $("button.reveal").click(function () {
+        // ER- Changed so that removeClass now removes the opposite class.
+        // ER - Period unnecessary in removeClass and addClass methods.
+        $("#hiddenImg").removeClass("hide");
+        $("#hiddenTxt").addClass("show");
+    });
+
+    $("button.remove").click(function () {
+        $("#hiddenImg").addClass("hide");
+        $("#hiddenTxt").removeClass("show");
+    });
+  });
+</script>
+</body>
+</html>
