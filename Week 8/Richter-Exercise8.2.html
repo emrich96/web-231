@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+;===========================================
+; Title: Exercise 8.2
+; Author: Emily Richter
+; Date: 1 February 2020
+; Description: Follow instructions to show
+; understanding of dynamic HTML.
+;===========================================
+-->
+<head>
+  <meta charset="UTF-8">
+  <title>Exercise 8.2</title>
+
+  <style type="text/css">
+    body {
+      font-family: 'Roboto', sans-serif;
+    }
+    nav {
+      display: block;
+      height: 20px;
+      background-color: gray;
+    }
+    #fruits {
+      margin: 0 auto;
+    }
+    h2 {
+      margin-top: 20px;
+    }
+    ul {
+      list-style: none;
+    }
+
+  </style>
+</head>
+<body>
+
+<nav></nav>
+
+<div id="fruits"></div>
+
+<script>
+  var fruits = [
+    {id: 1, type: "apple"},
+    {id: 2, type: "orange"},
+    {id: 3, type: "banana"},
+    {id: 4, type: "kiwi"},
+    {id: 5, type: "grape"}
+  ];
+
+  var out = "<h2>Fruits</h2><ul>";
+    for (var x = 0; x < fruits.length; x++) {
+        out += "<li>" + fruits[x].id + ": " + fruits[x].type + "</li>";
+    }
+    out += "</ul>";
+
+    document.getElementById('fruits').innerHTML = out;
+
+</script>
+
+</body>
+</html>
