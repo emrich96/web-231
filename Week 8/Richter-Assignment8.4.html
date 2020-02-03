@@ -6,7 +6,7 @@
 ; Author: Emily Richter
 ; Date: 1 February 2020
 ; Description: Follow instructions to show
-; understanding of
+; understanding of JavaScript
 ;===========================================
 -->
 
@@ -31,13 +31,16 @@
 <div id="emps"></div>
 
 <script type="text/javascript">
+
+// Create JavaScript constructor object
   function employee(id, firstName, lastName, title){
     this.id = id;
-    this.firstName = first;
-    this.lastName = last;
+    this.firstName = firstName;
+    this.lastName = lastName;
     this.title = title;
   };
 
+// Create and populate array of five employee objects
   var employeeList = [
     new employee (1, "Michael", "Scott", "Regional Manager"),
     new employee (2, "Dwight", "Schrute", "Assistant to the Regional Manager"),
@@ -46,36 +49,26 @@
     new employee (5, "Angela", "Martin", "Head Accountant")
   ];
 
+// Create getEmployee function that accepts id argument, iterates over array, and outputs matching employee record using alert box
   function getEmployee(id){
 employeeList.forEach(function(employee){
   if(id === employee.id){
     alert(`${employee.id} ${employee.firstName} ${employee.lastName} ${employee.title}`);}
   });}
 
+// Create a string variable named "output" and build an HTML table.
+// Iterate over the employee's array and append each employee property using the <td> </td> tag.
   var output = "<h2>Employees</h2><table>";
   for (var i = 0; i < employeeList.length; i++){
-    output += "<tr><td class=tableId>" + employeeList[i].id + "</td><td>" + employeeList[i].firstName + "</td><td>" + employeeList[i].lastName + "</td><td>" + employeeList[i].title + "</td></tr>";
+    output += "<tr><td class="table tr">" + employeeList[i].id + "</td><td>" + employeeList[i].firstName + "</td><td>" + employeeList[i].lastName + "</td><td>" + employeeList[i].title + "</td></tr>";
   }
   output += "</table>";
-
+// Assign the output string to the "emps" through the innerHTML function.
   document.getElementById("emps").innerHTML = output;
-
-
-  $(document).ready(function(){
-
-    $(".tableId").click(function(event) {
-    event.preventDefault();
-
-       var empId = $(this).text();
-
-       var empType = $(this).closest("td").next().text();
-
-       alert("{employee_id: " + empId + ", employee_name:" + empName + ", employee_type: " + empType + "}");
-  });
 
   // jQuery onClick event
   $(function () {
-    $("tableId").click(function (event) {
+    $("table tr").click(function (event) {
       event.preventDefault();
       var findEmployee = $(this).find("td:first").html();
       getEmployee(findEmployee);
@@ -83,7 +76,6 @@ employeeList.forEach(function(employee){
 
   });
 
-});
 </script>
 </body>
 </html>
